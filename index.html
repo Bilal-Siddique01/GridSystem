@@ -1,11 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .GridContainer {
+      width: 98vw;
+      /* padding: 10px; */
+      margin: auto;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px ;
+    }
+    .items {
+      background-color: yellow;
+      margin: 1px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width:480px) {
+      .GridContainer{
+        grid-template-columns: 300px ;
+        justify-content: center;
+      } 
+    }
+
+    @media only screen and (min-width:481px) {
+      .GridContainer{
+        grid-template-columns: auto auto ;
+      } 
+    }
+
+    @media only screen and (min-width:768px) {
+      .GridContainer{
+        grid-template-columns: auto auto auto ;
+      } 
+    }
+
+    @media only screen and (min-width: 992px) {
+      .GridContainer{
+        grid-template-columns: auto auto auto auto;
+      } 
+    }
+
+    @media only screen and (min-width: 1199px) {
+      .GridContainer{
+        grid-template-columns: auto auto auto auto auto auto;
+      } 
+    }
+
+    @media only screen and (min-width: 1400px) {
+      .GridContainer{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+      } 
+    }
+
+  </style>
 </head>
+
 <body>
-    
+
+  <div class="GridContainer">
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+    <div class="items item1">1</div>
+    <div class="items item2">2</div>
+    <div class="items item3">3</div>
+    <div class="items item4">4</div>
+    <div class="items item5">5</div>
+    <div class="items item6">6</div>
+    <div class="items item7">7</div>
+    <div class="items item8">8</div>
+    <div class="items item9">9</div>
+    <div class="items item10">10</div>
+    <div class="items item11">11</div>
+    <div class="items item12">12</div>
+  </div>
+
 </body>
+
 </html>
